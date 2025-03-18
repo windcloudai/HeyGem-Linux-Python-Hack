@@ -36,7 +36,7 @@ pip install -r requirements.txt
 Clone this repository to your local machine:
 ```bash
 git clone https://github.com/Holasyb918/HeyGem-Linux-Python-Hack
-cd HeyGem_Linux_Python_Hack
+cd HeyGem-Linux-Python-Hack
 bash download.sh
 ```
 Run your digital human project:  
