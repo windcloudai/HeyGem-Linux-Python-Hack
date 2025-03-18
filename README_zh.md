@@ -35,8 +35,8 @@ pip install -r requirements.txt
 ### 使用
 把项目克隆到本地
 ```bash
-git clone https://github.com/Holasyb918/HeyGem_Linux_Python_Hack
-cd HeyGem_Linux_Python_Hack
+git clone https://github.com/Holasyb918/HeyGem-Linux-Python-Hack
+cd HeyGem-Linux-Python-Hack
 bash download.sh
 ```
 开始使用  
