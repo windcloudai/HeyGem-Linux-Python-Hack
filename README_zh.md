@@ -37,6 +37,7 @@ pip install -r requirements.txt
 ```bash
 git clone https://github.com/Holasyb918/HeyGem_Linux_Python_Hack
 cd HeyGem_Linux_Python_Hack
+bash download.sh
 ```
 开始使用  
 在开始前，打开 run.py 并修改 audio_url 和 video_url 和 code，请注意，**url 是本地文件，且仅支持相对路径**.
