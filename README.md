@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ### Usage
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/Holasyb918/HeyGem_Linux_Python_Hack
+git clone https://github.com/Holasyb918/HeyGem-Linux-Python-Hack
 cd HeyGem_Linux_Python_Hack
 bash download.sh
 ```
