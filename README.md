@@ -35,8 +35,9 @@ pip install -r requirements.txt
 ### Usage
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/Holasyb918/HeyGem_Linux_Python_Hack
-cd HeyGem_Linux_Python_Hack
+git clone https://github.com/Holasyb918/HeyGem-Linux-Python-Hack
+cd HeyGem-Linux-Python-Hack
+bash download.sh
 ```
 Run your digital human project:  
 Before starting, open the run.py file and modify audio_url, video_url, and code. Please note that the URLs are local files and **only relative paths are supported**.
