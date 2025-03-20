@@ -144,6 +144,8 @@ def main():
     audio_url = "example/audio.wav"
     video_url = "example/video.mp4"
     code = "1002"
+    assert os.path.exists(audio_url), "audio file not exists"
+    assert os.path.exists(video_url), "video file not exists"
     task.work(audio_url, video_url, code, 0, 0, 0, 0)
 
 
