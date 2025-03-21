@@ -44,8 +44,14 @@ bash download.sh
 ```
 开始使用  
 在开始前，打开 run.py 并修改 audio_url 和 video_url 和 code，请注意，**url 是本地文件，且仅支持相对路径**.
+#### command:  
 ```bash
 python run.py 
+```  
+#### gradio:  
+```bash
+python app.py
+# 请等待模型初始化完成后提交任务
 ```
 
 ## Contributing  

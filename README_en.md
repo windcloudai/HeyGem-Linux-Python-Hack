@@ -43,9 +43,15 @@ cd HeyGem-Linux-Python-Hack
 bash download.sh
 ```
 Run your digital human project:  
-Before starting, open the run.py file and modify audio_url, video_url, and code. Please note that the URLs are local files and **only relative paths are supported**.
+Before starting, open the run.py file and modify audio_url, video_url, and code. Please note that the URLs are local files and **only relative paths are supported**.  
+#### command:  
 ```bash
 python run.py 
+```  
+#### gradio:  
+```bash
+python app.py
+# Please wait until processor init done.
 ```
 
 ## Contributing  
