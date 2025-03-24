@@ -43,9 +43,9 @@ git clone https://github.com/Holasyb918/HeyGem-Linux-Python-Hack
 cd HeyGem-Linux-Python-Hack
 bash download.sh
 ```
-开始使用  
-repo 中已提供可以用于 demo 的音视频样例，代码可以直接运行。  
-如果要使用自己的数据，在开始前，打开 run.py 并修改 audio_url(**音频路径**) 和 video_url(**视频路径**) 和 code(改不改都行)，请注意，**url 是本地文件，且仅支持相对路径**.
+#### 开始使用  
+* repo 中已提供可以用于 demo 的音视频样例，代码可以直接运行。  
+* 如果要使用自己的数据，在开始前，打开 run.py 并修改 audio_url(**音频路径**) 和 video_url(**视频路径**) 和 code(改不改都行)，请注意，**url 是本地文件，且仅支持相对路径**.
 #### command:  
 ```bash
 python run.py 
