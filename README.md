@@ -24,6 +24,7 @@
 * 无需 Windows: 完全基于 Linux 开发和测试。
 * Python 驱动: 使用 Python 语言开发，易于理解和扩展。
 * 开发者友好: 易于使用和扩展。
+* 完全离线。  
 
 ## 开始使用
 
@@ -43,7 +44,8 @@ cd HeyGem-Linux-Python-Hack
 bash download.sh
 ```
 开始使用  
-在开始前，打开 run.py 并修改 audio_url 和 video_url 和 code，请注意，**url 是本地文件，且仅支持相对路径**.
+repo 中已提供可以用于 demo 的音视频样例，代码可以直接运行。  
+如果要使用自己的数据，在开始前，打开 run.py 并修改 audio_url(**音频路径**) 和 video_url(**视频路径**) 和 code(改不改都行)，请注意，**url 是本地文件，且仅支持相对路径**.
 #### command:  
 ```bash
 python run.py 
