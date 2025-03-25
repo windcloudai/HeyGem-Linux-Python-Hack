@@ -42,11 +42,16 @@ git clone https://github.com/Holasyb918/HeyGem-Linux-Python-Hack
 cd HeyGem-Linux-Python-Hack
 bash download.sh
 ```
-Run your digital human project:  
-Before starting, open the run.py file and modify audio_url, video_url, and code. Please note that the URLs are local files and **only relative paths are supported**.  
+#### Getting Started
+* Audio and video examples that can be used for the demo are already provided in the repo, and the code can be run directly.
+#### Command:
+```bash
+python run.py
+```
+* If you want to use your own data, you can pass parameters externally. **Please note that the path is a local file and only supports relative paths.**
 #### command:  
 ```bash
-python run.py 
+python run.py --audio_path example/audio.wav --video_path example/video.mp4
 ```  
 #### gradio:  
 ```bash

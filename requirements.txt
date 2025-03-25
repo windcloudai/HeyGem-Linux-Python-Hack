@@ -25,6 +25,7 @@ llvmlite==0.38.1
 matplotlib==3.5.3
 networkx==2.6.3
 numba==0.55.2
+numexpr==2.8.6
 numpy==1.21.6
 nvdiffrast==0.2.5
 onnxruntime-gpu==1.9.0
