@@ -29,8 +29,8 @@
 ## 开始使用
 
 ### 安装
-本项目支持且仅支持 Linux & python3.8 环境  
-请确保你的 Linux 系统上已经安装了 Python 3.8。然后，使用 pip 安装项目依赖项：
+本项目**支持且仅支持 Linux & python3.8 环境**  
+请确保你的 Linux 系统上已经安装了 **Python 3.8**。然后，使用 pip 安装项目依赖项：
 
 ```bash
 pip install -r requirements.txt
