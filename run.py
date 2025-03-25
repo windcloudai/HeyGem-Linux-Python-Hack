@@ -178,7 +178,7 @@ def main():
         video_url = opt.video_path
     sys.argv = [sys.argv[0]]
     task = service.trans_dh_service.TransDhTask()
-    time.sleep(10)
+    time.sleep(10) # somehow, this works...
 
     code = "1004"
     task.work(audio_url, video_url, code, 0, 0, 0, 0)
@@ -187,5 +187,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python run.py or 
+# python run.py
 # python run.py --audio_path example/audio.wav --video_path example/video.mp4
