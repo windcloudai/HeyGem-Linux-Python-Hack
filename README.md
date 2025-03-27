@@ -36,7 +36,7 @@
 **请尽量不要询问任何关于 pip 的问题，感谢合作**
 
 ```bash
-# 直接安装整个 requirements.txt 不一定成功，更建议跑代码观察报错信息，然后根据报错信息去尝试安装，祝你顺利。
+# 直接安装整个 requirements.txt 不一定成功，更建议跑代码观察报错信息，然后根据报错信息结合 requirements 去尝试安装，祝你顺利。
 # pip install -r requirements.txt
 ```
 
