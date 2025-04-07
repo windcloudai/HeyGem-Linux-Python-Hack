@@ -75,7 +75,12 @@ mv face_detect_utils/resources/scrfd_500m_bnkps_shape640x640.onnx face_detect_ut
 mv scrfd_10g_kps.onnx face_detect_utils/resources/scrfd_500m_bnkps_shape640x640.onnx
 ```
 ### 2. 初始化报错  
-有较高概率是 onnxruntime-gpu 版本不匹配导致的，建议根据自己 cuda 等环境尝试更换一些版本。
+有较高概率是 onnxruntime-gpu 版本不匹配导致的，建议根据自己 cuda 等环境尝试更换一些版本。  
+如果难以解决，可以使用 conda 安装 cudatoolkit 环境，然后再尝试 pip 安装 onnxruntime-gpu。  
+验证可行版本如下：
+| cudatoolkit | onnxruntime-gpu | 备注 |
+| --- | --- | --- |
+| 1.18.0 | 1.16.0 |  |
 
 ## Contributing  
 欢迎贡献！
