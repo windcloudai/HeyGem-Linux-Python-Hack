@@ -67,14 +67,14 @@ python app.py
 ```
 
 ## QA
-1. 多个人脸报错
+### 1. 多个人脸报错  
 下载新的人脸检测模型，替换原本的模型即可。
 ```bash
 wget https://github.com/Holasyb918/HeyGem-Linux-Python-Hack/releases/download/ckpts_and_onnx/scrfd_10g_kps.onnx
 mv face_detect_utils/resources/scrfd_500m_bnkps_shape640x640.onnx face_detect_utils/resources/scrfd_500m_bnkps_shape640x640.onnx.bak
 mv scrfd_10g_kps.onnx face_detect_utils/resources/scrfd_500m_bnkps_shape640x640.onnx
 ```
-2. 初始化报错
+### 2. 初始化报错  
 有较高概率是 onnxruntime-gpu 版本不匹配导致的，建议根据自己 cuda 等环境尝试更换一些版本。
 
 ## Contributing  
