@@ -84,10 +84,11 @@ python check_env/check_onnx_cuda.py
 如果遇到问题，你可以尝试以下方法：
 1. 建议根据自己 cuda 等环境尝试更换一些版本。  
 2. 如果难以解决，可以使用 conda 安装 cudatoolkit 环境，然后再尝试 pip 安装 onnxruntime-gpu。  
-验证可行版本如下：
-| cudatoolkit | onnxruntime-gpu | 备注 |
-| --- | --- | --- |
-| 1.18.0 | 1.16.0 |  |
+
+    验证可行版本如下：  
+    | cudatoolkit | onnxruntime-gpu | 备注 |
+    | --- | --- | --- |
+    | 1.18.0 | 1.16.0 |  |
 
 ## Contributing  
 欢迎贡献！
