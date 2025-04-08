@@ -58,6 +58,7 @@ huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-
 #### command:  
 ```bash
 bash run.sh example/audio.wav example/text.txt example/video.mp4
+#             音色 wav           TTS 文本            视频
 ```  
 
 
