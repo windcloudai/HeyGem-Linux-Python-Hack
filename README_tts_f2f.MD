@@ -55,6 +55,7 @@ huggingface-cli download fishaudio/fish-speech-1.5 --local-dir checkpoints/fish-
 
 #### 开始使用  
 * repo 中已提供可以用于 demo 的音视频样例，代码可以直接运行。  
+把你需要生成的文本放在 [example/text.txt](example/text.txt) 中，把要克隆的音色放在 [example/audio.wav](example/audio.wav) 中，然后运行以下命令：
 #### command:  
 ```bash
 bash run.sh example/audio.wav example/text.txt example/video.mp4
