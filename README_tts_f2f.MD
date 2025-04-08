@@ -85,7 +85,7 @@ python check_env/check_onnx_cuda.py
     验证可行版本如下：  
     | cudatoolkit | onnxruntime-gpu | 备注 |
     | --- | --- | --- |
-    | 1.18.0 | 1.16.0 |  |
+    | 11.8.0 | 1.16.0 |  |
 
 ### 3. ImportError: cannot import name check_argument_types  
 缺包
