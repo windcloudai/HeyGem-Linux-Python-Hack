@@ -97,6 +97,20 @@ python check_env/check_onnx_cuda.py
 ```bash
 pip install typeguard
 ```
+  
+### 4. library.so 找不到  
+报错一般是类似于 Could not load library libcublasLt.so.11. Error: libcublasLt.so.11: cannot open shared object file: No such file or directory  
+
+执行以下命令查看是否有改文件  
+```
+sudo find /usr -name "libcublasLt.so.11"  
+```
+没有的话，应该需要安装对应版本的cuda  
+如果有的话就把第一步查看的文件路径添加到环境变量  
+```
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+```
+永久生效就添加到 ~/.bashrc 里面然后 source ~/.bashrc 一下  
 
 ## Contributing  
 欢迎贡献！
