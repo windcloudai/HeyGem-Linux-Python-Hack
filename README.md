@@ -32,6 +32,7 @@
 
 ### 安装
 本项目**支持且仅支持 Linux & python3.8 环境**  
+AudoDL 可以参考 https://github.com/Holasyb918/HeyGem-Linux-Python-Hack/issues/43
 请确保你的 Linux 系统上已经安装了 **Python 3.8**。然后，使用 pip 安装项目依赖项  
 同时也提供一个备用的环境 [requirements_0.txt](requirements_0.txt)，遇到问题的话，你可以参考它来建立一个新的环境。  
 **具体的 onnxruntime-gpu / torch 等需要结合你的机器上的 cuda 版本去尝试一些组合，否则仍旧可能遇到问题。**  
