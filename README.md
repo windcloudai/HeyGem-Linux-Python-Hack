@@ -13,9 +13,12 @@
 
 # HeyGem-Linux-Python-Hack
 
+# 我们会在近期更新支持 50 系显卡的版本，敬请期待！
+
 ## 项目简介
 
-[HeyGem-Linux-Python-Hack] 是一个基于 Python 的数字人项目，它从 [HeyGem.ai](https://github.com/GuijiAI/HeyGem.ai) 中提取出来，它能够直接在 Linux 系统上运行，摆脱了对 Docker 和 Windows 系统的依赖。我们的目标是提供一个更易于部署和使用的数字人解决方案。
+[HeyGem-Linux-Python-Hack] 是一个基于 Python 的数字人项目，它从 [HeyGem.ai](https://github.com/GuijiAI/HeyGem.ai) 中提取出来，它能够直接在 Linux 系统上运行，摆脱了对 Docker 和 Windows 系统的依赖。我们的目标是提供一个更易于部署和使用的数字人解决方案。  
+微信群请参考 https://github.com/Holasyb918/HeyGem-Linux-Python-Hack/issues/37  
 
 **如果你觉得这个项目对你有帮助，欢迎给我们 Star！**  
 **如果运行过程中遇到问题，在查阅已有 Issue 后，在查阅 Google/baidu/ai 后，欢迎提交 Issues！**
