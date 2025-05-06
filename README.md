@@ -9,15 +9,14 @@
 如果你需要较为完整的 HeyGem，即从 TTS 到数字人，那么你可以参考 [这里](README_tts_f2f.MD)
 ---
 
+
 <a name="chinese-version"></a>
 
 # HeyGem-Linux-Python-Hack
 
 ## 项目简介
 
-[HeyGem-Linux-Python-Hack] 是一个基于 Python 的数字人项目，它从 [HeyGem.ai](https://github.com/GuijiAI/HeyGem.ai) 中提取出来，它能够直接在 Linux 系统上运行，摆脱了对 Docker 和 Windows 系统的依赖。我们的目标是提供一个更易于部署和使用的数字人解决方案。  
-微信群请参考 https://github.com/Holasyb918/HeyGem-Linux-Python-Hack/issues/37  
-
+[HeyGem-Linux-Python-Hack] 是一个基于 Python 的数字人项目，它从 [HeyGem.ai](https://github.com/GuijiAI/HeyGem.ai) 中提取出来，它能够直接在 Linux 系统上运行，摆脱了对 Docker 和 Windows 系统的依赖。我们的目标是提供一个更易于部署和使用的数字人解决方案。   
 [RTX 50版本已经发布，点击可达](https://github.com/Holasyb918/HeyGem-Linux-Python-Hack-RTX-50)  
 
 **如果你觉得这个项目对你有帮助，欢迎给我们 Star！**  
@@ -31,6 +30,9 @@
 * Python 驱动: 使用 Python 语言开发，易于理解和扩展。
 * 开发者友好: 易于使用和扩展。
 * 完全离线。  
+
+微信群  
+![](./1.jpeg)
 
 ## 开始使用
 
