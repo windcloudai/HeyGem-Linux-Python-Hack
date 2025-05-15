@@ -14,6 +14,10 @@ import queue
 import cv2
 from flask import Flask, request
 
+if sys.version_info.major != 3 or sys.version_info.minor != 8:
+    print("请使用 Python 3.8 版本运行此脚本")
+    sys.exit(1)
+
 import service.trans_dh_service
 
 from h_utils.custom import CustomError
