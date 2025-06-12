@@ -2,6 +2,7 @@ import argparse
 import gc
 import json
 import os
+import queue
 import subprocess
 import sys
 import threading
@@ -10,12 +11,10 @@ import traceback
 import uuid
 from enum import Enum
 
-import queue
 import cv2
 from flask import Flask, request
 
 import service.trans_dh_service
-
 from h_utils.custom import CustomError
 from y_utils.config import GlobalConfig
 from y_utils.logger import logger
@@ -178,7 +177,7 @@ def main():
         video_url = opt.video_path
     sys.argv = [sys.argv[0]]
     task = service.trans_dh_service.TransDhTask()
-    time.sleep(10) # somehow, this works...
+    time.sleep(10)  # somehow, this works...
 
     code = "1004"
     task.work(audio_url, video_url, code, 0, 0, 0, 0)
