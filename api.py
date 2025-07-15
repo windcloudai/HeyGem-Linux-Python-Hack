@@ -6,12 +6,16 @@ import sys
 import time
 import traceback
 import uuid
+import jwt
+from jwt import JWT, exceptions as jwt_exceptions
+from jwt.jwk import OctetJWK
 
 import cv2
 from utilmeta.core import api, request, response
 from utilmeta.core.file import File
 from xengine_commons.api import APIStatus as AS, ResponseSchema as RS
 import logging
+from functools import wraps
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 # --- 开始：添加 HeyGem-Linux-Python-Hack 到 sys.path ---
@@ -19,6 +23,35 @@ current_script_dir = os.path.dirname(os.path.abspath(__file__))
 hey_gem_hack_path = os.path.join(current_script_dir, "HeyGem-Linux-Python-Hack")
 logging.info(f"current_script_dir: {current_script_dir}") # <-- 新增日志
 logging.info(f"hey_gem_hack_path: {hey_gem_hack_path}") # <-- 新增日志
+
+JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'fengyun-heygem-secret')
+JWT_ALGORITHM = 'HS256'
+JWK_KEY = OctetJWK(key=JWT_SECRET_KEY.encode())
+
+def verify_jwt_token(token: str) -> bool:
+    try:
+        payload = JWT().decode(token, key=JWK_KEY, algorithms=[JWT_ALGORITHM])
+        uid = payload['sub']
+        if uid != "123456789":
+            return False
+        return True
+    except jwt_exceptions.JWSDecodeError:
+        return False
+
+def jwt_required(func):
+    @wraps(func)
+    async def wrapper(self, *args, **kwargs):
+        auth_header = self.request.headers.get('Authorization')
+        if not auth_header or not auth_header.startswith('Bearer '):
+            return RS.error(AS.PERMISSION_DENIED, "缺少认证令牌")
+        
+        token = auth_header.split(' ')[1]
+        if not verify_jwt_token(token):
+            return RS.error(AS.PERMISSION_DENIED, "无效的认证令牌")
+            
+        return await func(self, *args, **kwargs)
+    return wrapper
+
 
 if hey_gem_hack_path not in sys.path:
     sys.path.insert(0, hey_gem_hack_path)
@@ -267,6 +300,7 @@ class MockTransDhTask:
 
 class VideoGenerationAPI(api.API):
     @api.post("/generate_video")
+    @jwt_required
     async def generate_video(
         self,
         audio_file: File = request.BodyParam,
