@@ -313,7 +313,7 @@ class VideoGenerationAPI(api.API):
         os.makedirs(temp_upload_dir, exist_ok=True)
 
         # 使用唯一ID确保文件名不冲突
-        request_id = uuid.uuid4().hex[:6]
+        request_id = uuid.uuid4().hex
 
         request_dir = os.path.join(current_script_dir, temp_upload_dir, request_id)
 
