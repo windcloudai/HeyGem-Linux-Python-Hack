@@ -6,6 +6,10 @@ from utilmeta.ops import Operations
 INPUT_DIR = "input/"
 OUTPUT_DIR = "output/"
 
+TTS_URL = "http://10.0.74.56:8102/speech/tts"
+TTS_OUTPUT = "http://10.0.74.56:8120/speech_output"
+TTS_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiAiMTIzNDU2Nzg5IiwgIm5hbWUiOiAiZmVuZ3l1bi1tZWdhdHRzLXVzZXIifQ.JviECs8wUP1LmVgVu0AB5TBlWjEOisxnpwdWN_oReGc"
+
 
 def configure(service: UtilMeta):
     service.use(Operations(
