@@ -351,9 +351,9 @@ class MockTransDhTask:
 
 
 class ConfigureSchema(Schema):
-    volume: str
-    rate: str
-    pitch: str
+    volume: str = "+0%"
+    rate: str = "+0%"
+    pitch: str = "+0Hz"
     figure_type: str
     clothes_type: str
 
